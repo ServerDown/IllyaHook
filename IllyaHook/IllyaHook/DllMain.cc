@@ -1,25 +1,24 @@
 /* PROJECT IllyaHook by MRX - KUNO [ started : 20-08-16 ] */
 
-#include <Windows.h>
-#include <iostream>
+#include "Includes.h"
+#include "Console.h"
 
-using namespace std;
+HINSTANCE ThisModule;
+cConsole *Console;
 
-DWORD WINAPI InterfaceInit(LPVOID IpThreadParam)
+void CheatThread(LPVOID params)
 {
-	AllocConsole();
-	freopen("CONOUT$", "w", stdout);
-	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), FOREGROUND_RED | FOREGROUND_INTENSITY);
-	cout << __DATE__ << endl;
-	cout << "-IllyaHook by MRX & Kuno" << endl;
-	return 1;
+	Beep(1000, 1);
+	Console->OpenConsole();
+	Console->Log("Build date: %s", __DATE__);
 }
 
-
-BOOL WINAPI DllMain(HINSTANCE pInstance, DWORD dwReason, LPVOID IpReversed)
+DWORD WINAPI DllMain(HINSTANCE inst, DWORD reason, LPVOID reserved)
 {
-	if (dwReason != DLL_PROCESS_ATTACH)
-		return TRUE;
-	CreateThread(nullptr, NULL, InterfaceInit, nullptr, NULL, nullptr);
+	if (reason == DLL_PROCESS_ATTACH)
+	{
+		ThisModule = inst;
+		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)CheatThread, NULL, NULL, NULL);
+	}
 	return TRUE;
 }
