@@ -5,7 +5,7 @@
 
 using namespace std;
 
-DWORD WINAPI InterfaceInit(LPVOID IpThreadParam) 
+DWORD WINAPI InterfaceInit(LPVOID IpThreadParam)
 {
 	AllocConsole();
 	freopen("CONOUT$", "w", stdout);
@@ -16,7 +16,7 @@ DWORD WINAPI InterfaceInit(LPVOID IpThreadParam)
 }
 
 
-BOOL WINAPI DllMain(HINSTANCE pInstance, DWORD dwReason, LPVOID IpReversed) 
+BOOL WINAPI DllMain(HINSTANCE pInstance, DWORD dwReason, LPVOID IpReversed)
 {
 	if (dwReason != DLL_PROCESS_ATTACH)
 		return TRUE;
