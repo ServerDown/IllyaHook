@@ -6,7 +6,7 @@ void cConsole::OpenConsole()
 	freopen("CONIN$", "r", stdin);
 	freopen("CONOUT$", "w", stdout);
 	freopen("CONOUT$", "w", stderr);
-	SetConsoleTitle((LPCTSTR)"IllyaHook for Counter-Strike: Global Offensive"); // maybe add random text generator for title
+	SetConsoleTitle(L"IllyaHook for Counter-Strike: Global Offensive"); // maybe add random text generator for title
 }
 
 void cConsole::CloseConsole()

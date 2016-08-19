@@ -9,6 +9,7 @@ public:
 	void OpenConsole();
 	void CloseConsole();
 	void Log(const char *msg, ...);
+
 	std::string GetTime();
 };
 
