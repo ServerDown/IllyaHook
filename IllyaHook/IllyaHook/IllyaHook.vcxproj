@@ -77,6 +77,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(ExecutablePath)</ExecutablePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\hl2sdk-2013\mp\src;C:\hl2sdk-2013\mp\src\common;C:\hl2sdk-2013\mp\src\game;C:\hl2sdk-2013\mp\src\materialsystem;C:\hl2sdk-2013\mp\src\mathlib;C:\hl2sdk-2013\mp\src\public;C:\hl2sdk-2013\mp\src\raytrace;C:\hl2sdk-2013\mp\src\thirdparty;C:\hl2sdk-2013\mp\src\tier0;C:\hl2sdk-2013\mp\src\tier1;C:\hl2sdk-2013\mp\src\utils;C:\hl2sdk-2013\mp\src\vgui2;C:\hl2sdk-2013\mp\src\public\appframework;C:\hl2sdk-2013\mp\src\public\engine;C:\hl2sdk-2013\mp\src\public\filesystem;C:\hl2sdk-2013\mp\src\public\Friends;C:\hl2sdk-2013\mp\src\public\game;C:\hl2sdk-2013\mp\src\public\inputsystem;C:\hl2sdk-2013\mp\src\public\steam;C:\hl2sdk-2013\mp\src\public\tier0;C:\hl2sdk-2013\mp\src\public\tier1;C:\hl2sdk-2013\mp\src\public\tier2;C:\hl2sdk-2013\mp\src\public\tier3;C:\hl2sdk-2013\mp\src\public\vgui;C:\hl2sdk-2013\mp\src\public\VGuiMatSurface;$(IncludePath)</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);C:\hl2sdk-2013\mp\src\lib\public;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -151,6 +154,7 @@
     <ClInclude Include="Includes.h" />
     <ClInclude Include="Interfaces.h" />
     <ClInclude Include="InterfacesGrabber.h" />
+    <ClInclude Include="SDK.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

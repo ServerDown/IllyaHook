@@ -16,6 +16,9 @@
     <Filter Include="Header Files\Misc">
       <UniqueIdentifier>{5c02ff70-8d17-4334-bc63-7c5a52d548e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SDK">
+      <UniqueIdentifier>{28f3ce8f-6923-4f1e-8c7f-ab728b3d1993}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DllMain.cc">
@@ -40,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="InterfacesGrabber.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK.h">
+      <Filter>Source Files\SDK</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

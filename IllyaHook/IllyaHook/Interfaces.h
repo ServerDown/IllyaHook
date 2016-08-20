@@ -1,5 +1,6 @@
 #pragma once
 
-class Interface {
- // we add here
+class Interfaces {
+public:
+	ISurface* g_pSurface;
 };

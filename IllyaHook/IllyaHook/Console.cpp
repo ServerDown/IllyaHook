@@ -13,7 +13,7 @@ void cConsole::CloseConsole()
 {
 	FreeConsole();
 }
-
+ 
 void cConsole::Log(const char * msg, ...)
 {
 	if (!msg)
