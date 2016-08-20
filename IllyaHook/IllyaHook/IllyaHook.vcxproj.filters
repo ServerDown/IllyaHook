@@ -24,6 +24,9 @@
     <ClCompile Include="Console.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="InterfacesGrabber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Includes.h">
@@ -31,6 +34,12 @@
     </ClInclude>
     <ClInclude Include="Console.h">
       <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfacesGrabber.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

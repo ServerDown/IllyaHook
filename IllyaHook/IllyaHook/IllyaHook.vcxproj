@@ -144,10 +144,13 @@
   <ItemGroup>
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="DllMain.cc" />
+    <ClCompile Include="InterfacesGrabber.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
     <ClInclude Include="Includes.h" />
+    <ClInclude Include="Interfaces.h" />
+    <ClInclude Include="InterfacesGrabber.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

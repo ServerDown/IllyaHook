@@ -2,15 +2,17 @@
 
 #include "Includes.h"
 #include "Console.h"
+#include "InterfacesGrabber.h"
 
 HINSTANCE ThisModule;
 cConsole *Console;
 
 void CheatThread(LPVOID params)
 {
-	Beep(1000, 1);
+	Beep(500, 10);
 	Console->OpenConsole();
-	Console->Log("Build date: %s", __DATE__);
+ 	Console->Log("Build date: %s", __DATE__);
+	Console->Log("Project: Illyahook");
 }
 
 DWORD WINAPI DllMain(HINSTANCE inst, DWORD reason, LPVOID reserved)
