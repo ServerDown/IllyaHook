@@ -12,5 +12,6 @@
 
 #include <Windows.h>
 #include <iostream>
+#include <time.h>
 
 #endif // ILLYAHOOK_COMMON_H_
