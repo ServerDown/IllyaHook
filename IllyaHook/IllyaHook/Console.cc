@@ -1,3 +1,5 @@
+// Copyright (C) 2016 Mrx
+
 #include "Console.h"
 
 void cConsole::OpenConsole()
