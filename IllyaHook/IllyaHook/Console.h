@@ -1,8 +1,9 @@
+// Copyright (C) 2016 Mrx
+
 #ifndef ILLYA_CONSOLE_H
 #define ILLYA_CONSOLE_H
 
-#include "Includes.h"
-#include <time.h>
+#include "Common.h"
 
 class cConsole {
 public:
@@ -13,4 +14,4 @@ public:
 	std::string GetTime();
 };
 
-#endif
+#endif // ILLYA_CONSOLE_H
